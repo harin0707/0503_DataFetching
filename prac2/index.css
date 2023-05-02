@@ -1,0 +1,24 @@
+#listContainer{
+    width: 100%;
+    display: flex;
+    
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#list{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 90%;
+    margin: 10px 0 ;
+    margin: 10px;
+    background-color: #CCEEFF;
+
+}
+
+img{
+    width: 400px;
+}
