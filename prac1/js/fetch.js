@@ -1,20 +1,16 @@
-// import remove from './remove.js';
-const container = document.getElementById('container');
-
 async function fetchData(){ 
+    const container = document.getElementById('container');
 
     while(container.firstChild){
         container.removeChild(container.firstChild);
     }
 
 
-    await fetch('./data/data.json')
+    fetch('./data/data.json')
         .then((response)=>{
             return response.json();
         })
 
-
-        //onClick해서 데이터 출력 확인
         .then((data)=>{
             console.log(data);
 
